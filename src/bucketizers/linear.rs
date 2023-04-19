@@ -1,4 +1,4 @@
-use std::ops::{Sub, Div, Deref};
+use std::ops::{Sub, Div};
 use crate::{bucketize::{Bucketize, BucketizeSingle}, into_usize::IntoUsize};
 
 
