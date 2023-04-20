@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 num-traits = "0.2"
+ordered-float = "3.6.0"
