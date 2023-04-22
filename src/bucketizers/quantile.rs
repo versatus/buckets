@@ -7,6 +7,7 @@ use crate::bucketize::{Bucketize, BucketizeSingle};
 ///     quantiles: Vec<T>,
 ///     n_quantiles: usize
 /// }
+#[derive(Clone, Debug)]
 pub struct QuantileBucketizer<T> 
 where 
     T: PartialOrd + Copy 

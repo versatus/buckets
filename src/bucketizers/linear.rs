@@ -20,6 +20,7 @@ use crate::{bucketize::{Bucketize, BucketizeSingle}, into_usize::IntoUsize};
 ///     bucket_width: T
 /// }
 /// ```
+#[derive(Clone, Debug)]
 pub struct LinearBucketizer<T> 
 where 
     T: PartialOrd + Sub<Output = T> + Div<Output = T> + Copy + IntoUsize,

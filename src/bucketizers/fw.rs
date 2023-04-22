@@ -13,6 +13,7 @@ use crate::{bucketize::{Bucketize, BucketizeSingle}, into_usize::IntoUsize};
 ///     offset: T,
 /// }
 /// ```
+#[derive(Clone, Debug)]
 pub struct FixedWidthBucketizer<T> 
 where 
     T: PartialOrd

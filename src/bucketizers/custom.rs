@@ -19,6 +19,7 @@ use crate::bucketize::{Bucketize, BucketizeSingle};
 /// }
 ///
 /// ```
+#[derive(Clone, Debug)]
 pub struct CustomBucketizer<T: PartialOrd + Copy, F> 
 where 
     F: Fn(&T) -> usize 

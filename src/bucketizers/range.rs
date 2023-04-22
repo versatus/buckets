@@ -14,6 +14,7 @@ use crate::bucketize::{Bucketize, BucketizeSingle};
 ///     ranges: Vec<(T, T)>,
 /// }
 /// ```
+#[derive(Clone, Debug)]
 pub struct RangeBucketizer<T: PartialOrd + Copy> {
     ranges: Vec<(T, T)>,
 }
